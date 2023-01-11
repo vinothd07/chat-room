@@ -203,6 +203,11 @@ ul {
     will-change: transform;
 }
 
+.form h1,
+h2 {
+    color: #fff;
+}
+
 .button-28:disabled {
     pointer-events: none;
 }
