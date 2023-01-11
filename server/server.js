@@ -15,10 +15,10 @@ server.listen(port, () => {
 app.use(compression());
 
 // Routing
-app.use('/robots.txt', function (req, res, next) {
-    res.type('text/plain')
-    res.send("User-agent: *\nDisallow: /");
-});
+// app.use('/robots.txt', function (req, res, next) {
+//     res.type('text/plain')
+//     res.send("User-agent: *\nDisallow: /");
+// });
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Chatroom
