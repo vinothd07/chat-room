@@ -35,6 +35,17 @@ $(function () {
         log(message);
     }
 
+    // form submit
+    $('#enterBtn, .sendImg').click(() => {
+        if (username) {
+            sendMessage();
+            socket.emit('stop typing');
+            typing = false;
+        } else {
+            setUsername();
+        }
+    })
+
     // Sets the client's username
     const setUsername = () => {
         username = cleanInput($usernameInput.val().trim());

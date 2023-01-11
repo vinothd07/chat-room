@@ -3,7 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Chat Room</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Free Chat Room | Free Dating App | Best dating app for free | Best chat romm for free</title>
+    <meta name="description"
+        content="Join our user-friendly chat room application and connect with people from all around the world. Discover a new way to communicate, share ideas and make friends online. Try it now! 100% FREE">
+    <meta name="robots" content="index, follow">
+
+    <!-- OG -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Chat Room App: Connect & Communicate with People Worldwide" />
+    <meta property="og:description"
+        content="Join our interactive and user-friendly chat room application and connect with like-minded individuals from around the world. Share ideas, thoughts, and laughter in real-time with people from all around the world" />
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,12 +24,30 @@
             <div class="chatArea">
                 <ul class="messages"></ul>
             </div>
-            <input class="inputMessage" placeholder="Type here..." />
+            <div class="footer">
+                <div class="mainDiv">
+                    <input class="inputMessage" placeholder="Type here..." />
+                    <img src="./send.png" alt="send message" class="sendImg" />
+                </div>
+            </div>
         </li>
         <li class="login page">
             <div class="form">
+                <h1 style="color: #fff;">Chat Room</h1>
                 <h3 class="title">What's your nickname?</h3>
-                <input class="usernameInput" type="text" maxlength="14" />
+
+                <div>
+                    <input class="usernameInput" type="text" maxlength="14" />
+                </div>
+                <br>
+                <br>
+
+                <div>
+                    <button type="button" class="button-28" id="enterBtn">
+                        ENTER >
+                    </button>
+                </div>
+
             </div>
         </li>
     </ul>
