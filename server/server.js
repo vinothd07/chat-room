@@ -4,12 +4,23 @@ const path = require('path');
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const compression = require('compression');
+const { connectMongo } = require('./db');
 
 const port = process.env.PORT || 3000;
 
 server.listen(port, () => {
     console.log('Server listening at port %d', port);
 });
+
+// connectMongo.then(() => {
+//     console.log('MongoDB connected');
+
+//     server.listen(port, () => {
+//         console.log('Server listening at port %d', port);
+//     });
+// }).catch(e => console.error('MongoDB connection error..', e))
+
+
 
 // compression
 app.use(compression());
